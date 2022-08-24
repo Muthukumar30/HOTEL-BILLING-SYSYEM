@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>check</title>
+	<style type="text/css">
+	   body
+       {
+	        background-color: green;
+       }
+       h1
+       {
+	        text-align: center;
+	        text-decoration: underline;
+	        color: black;
+       }
+
+       table
+       {
+	        border:8px solid black;
+	        color: black;
+	        background-color:cadetblue;
+            border-collapse: collapse;
+	        font-size: 16px;
+	        font-family: serif;
+	        padding: 5px;
+	        border: 5px solid white;
+	        table-align:center;
+       }
+        button{
+
+         border-radius: 12px;
+         background-color: #171717;
+         color: white;
+         font-size: 1.2em;
+     }
+
+     button:hover{
+
+         background-color: rgba(31, 30, 30, 0.822);
+     }
+
+    </style>
+</head>
+<body>
+<td>
+			    <h3> Application id :</h3>
+			 </td>
+<table border =1>
+    {% for i in detail %}
+    <tr>
+        <td><h1>{{i}}</h1></td>
+    </tr>
+    {% endfor %}
+</table>
+  <button> <a href= "/">QUIT</a></button>
+</body>
+</html>
